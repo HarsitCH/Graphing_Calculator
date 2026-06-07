@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphing-calculator"
+version = "1.0.0"
+description = "A secure graphing calculator with AST-based expression evaluation"
+readme = "README.md"
+authors = [{name = "Harsit CH"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "matplotlib>=3.0.0",
+]
+
+[project.scripts]
+graphing-calculator = "main:main"
